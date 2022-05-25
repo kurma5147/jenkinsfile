@@ -1,0 +1,26 @@
+pipeline{
+    agent any
+    stages{
+        stage('Build'){
+            steps{
+                echo "Build the artifacts"
+            }
+        }
+        
+        stage('Deplloy'){
+            steps{
+                echo "Deploy the artifacts"
+            }
+        }
+        stage('Test'){
+            steps{
+                echo "Test the artifacts"
+            }
+        }
+        stage('Run'){
+            steps{
+                echo "Run the artifacts"
+            }
+        }
+    }
+}
